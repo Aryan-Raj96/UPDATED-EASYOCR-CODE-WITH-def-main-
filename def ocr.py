@@ -36,16 +36,16 @@ def main():
         raise FileNotFoundError("Image not found")
 
     rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    show("1. Original Image", rgb)
+    #show("1. Original Image", rgb)
 
     # GRAYSCALE
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    show("2. Grayscale", gray, cmap="gray")
+    #show("2. Grayscale", gray, cmap="gray")
 
     # PREPROCESS
     flat = flatten_image(gray)
     contrast = enhance_contrast(flat)
-    show("3. After Flatten + Contrast", contrast, cmap="gray")
+    #show("3. After Flatten + Contrast", contrast, cmap="gray")
 
     # EasyOCR
     reader = easyocr.Reader(['en'], gpu=False)
