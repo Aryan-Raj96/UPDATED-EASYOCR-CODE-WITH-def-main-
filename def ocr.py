@@ -88,7 +88,7 @@ def main():
             cv2.LINE_AA
         )
 
-    show("4. OCR Output", output_img)
+    #show("4. OCR Output", output_img)
 
     # FINAL OUTPUT
     print("\n🔹 RAW OCR WORDS (Input from Image):")
